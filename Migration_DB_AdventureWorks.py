@@ -74,7 +74,6 @@ try:
   pushdown_query = """ 
                        (select 
                             s.name + '.' + t.name Tables
-                           
                         from sys.tables t 
                          left join sys.schemas s 
                           on t.schema_id = s.schema_id 
@@ -82,7 +81,7 @@ try:
                                       union all 
                   ------------------------------------------------
                         select 
-                              s.name + '.' + v.name 
+                            s.name + '.' + v.name 
                         from sys.views v 
                          left join sys.schemas s 
                           on v.schema_id = s.schema_id) tbls """
