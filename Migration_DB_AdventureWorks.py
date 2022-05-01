@@ -100,7 +100,7 @@ try:
     # Variável que coleta todos os dados de todas as tables e views do db
     lst_tbls = df_stg.collect()
     
-    # Variável que não trará 3 tabelas na migração    
+    # Variável que não trará 4 tabelas na migração    
     lst_exc = ["dbo.ErrorLog","dbo.BuildVersion","sys.database_firewall_rules","sys.ipv6_database_firewall_rules"]
         #------------------------------------------------------------------------------------------------------------------#
     
