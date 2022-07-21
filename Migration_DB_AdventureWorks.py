@@ -128,7 +128,7 @@ try:
         
         # Drop de tabelas caso as mesmas ja existam no db silver
         sql_drop = (f"drop table if exists {db_svr}.{entity}")
-        print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n',sql_drop)
+        print('=-'*56,'=\n',sql_drop)
         spark.sql(sql_drop)
         
         # Criação das tabelas de metadados no db silver do Databricks
